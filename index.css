@@ -1,3 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+
 * {
   margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #dfdbdb;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.logo {
+  align-items: center;
+}
+
+.header {
+  width: 100vw;
+  height: 8vh;
+  background-color: #202020;
+  box-shadow: 0 5px 5px #0c0c0cb6;
+  color: #e7e5e5;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  height: inherit;
+  margin: auto;
+}
+
+.menu-hamburguer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  flex-direction: column;
+  transition: 0.7s;
+}
+
+.menu-hamburguer:hover {
+  background-color: #4949496b;
+  cursor: pointer;
+}
+
+.menu-hamburguer span {
+  background-color: #e7e5e5;
+  height: 2px;
+  width: 20px;
+}
+
+.menu-hamburguer span + span {
+  margin-top: 5px;
+}
+
+.main {
+  width: 80vw;
+  margin: 30px auto;
+}
+
+.magicRubic {
+  width: 40px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.introduction__title {
+  color: #f0ecec;
+}
+
+.introduction__text {
+  margin-top: 15px;
 }
