@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="shortcut icon" href="magicRubik.svg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/magicRubik.svg"
+      type="image/x-icon"
+    />
     <title>Cubo mágico</title>
   </head>
   <body>
     <header class="header">
       <div class="header-wrapper">
         <div class="d-flex logo">
-          <img class="magicRubic" src="magicRubik.svg" alt="" />
-          <h1 class="title">Cubo mágico a saga</h1>
+          <img class="magicRubic" src="./assets/magicRubik.svg" alt="" />
+          <h1 class="logo">Cubo mágico a saga</h1>
         </div>
         <div class="menu-hamburguer">
           <span></span>
@@ -22,17 +26,38 @@
         </div>
       </div>
     </header>
-    <main class="main">
-      <div class="sidebar"></div>
-      <section class="introduction">
-        <h1 class="title introduction__title">Motivações desse projeto</h1>
-        <p class="introduction__text p">
-          O principal intuito desse projeto é compartilar minhas descobertas
-          aqui de forma que fique claro como o projeto foi evoluindo e como eu
-          cheguei até onde cheguei.
-        </p>
-      </section>
+
+    <main class="main d-flex">
+      <div class="sidebar --active">
+        <nav>
+          <ul>
+            <li class="sidebar__item"><a class="item" href="">Dia 0</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <section class="section--margin-top">
+          <h1 class="section__title">Motivações desse projeto</h1>
+          <p class="section__text">
+            O principal intuito desse projeto é compartilar minhas descobertas,
+            documentar como o projeto foi evoluindo e como eu cheguei até onde
+            cheguei. Espero que o máterial aqui apresentado seja utilio para
+            você.
+          </p>
+        </section>
+
+        <section class="section--margin-top">
+          <h1 class="section__title">Entendendo como isso funciona</h1>
+          <p class="section__text">
+            Eu vou dividir o que eu fiz ou aprendi por página, para ficar mais
+            organizado, assim você pode acompanhar o qu eu fiz em cada dia.
+            Nessa página inicial vão ficar apenas algumas disposições iniciais e
+            como funciona o próprio cubo mágico.
+          </p>
+        </section>
+      </div>
     </main>
-    <footer></footer>
+    <script src="toggleSideBar.js"></script>
   </body>
 </html>
