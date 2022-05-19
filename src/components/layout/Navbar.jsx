@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import img from "../logo.svg";
+import img from "../../logo.svg";
 import MenuHamburguer from "./MenuHamburguer";
 
 //#region style
