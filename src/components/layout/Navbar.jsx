@@ -44,7 +44,7 @@ const Navbar = ({ setSidebarStatus }) => {
           <Img src={img}></Img>
           <Title>Cubo mágico, a saga</Title>
         </LogoWrapper>
-        <MenuHamburguer setSidebarStatus={() => setSidebarStatus()} />
+        <MenuHamburguer setSidebarStatus={(e) => setSidebarStatus(e)} />
       </HeaderWrapper>
     </Header>
   );

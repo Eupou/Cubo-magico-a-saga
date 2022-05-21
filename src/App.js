@@ -8,7 +8,7 @@ import Home from "./components/pages/Home";
 import Day0 from "./components/pages/Day0";
 
 import Navbar from "./components/layout/Navbar";
-import Sidebar from "./components/layout/Sidebar";
+import Sidebar from "./components/layout/sidebar/Sidebar";
 
 import "./index.css";
 
@@ -24,10 +24,8 @@ const App = () => {
   const [sidebarStatus, setSidebarStatus] = useState(false);
   return (
     <>
+      <Navbar setSidebarStatus={() => setSidebarStatus(!sidebarStatus)} />
       <Router>
-        <Navbar
-          setSidebarStatus={() => setSidebarStatus((prevStatus) => !prevStatus)}
-        />
         <Main>
           <Sidebar sidebarStatus={sidebarStatus} />
           <Content>

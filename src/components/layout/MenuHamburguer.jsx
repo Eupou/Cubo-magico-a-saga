@@ -30,7 +30,9 @@ const MenuBar = styled.span`
 
 const MenuHamburguer = ({ setSidebarStatus }) => {
   return (
-    <StyledMenuHamburguer onClick={() => setSidebarStatus()}>
+    <StyledMenuHamburguer
+      onClick={() => setSidebarStatus((prevValue) => !prevValue)}
+    >
       <MenuBar></MenuBar>
       <MenuBar></MenuBar>
       <MenuBar></MenuBar>
