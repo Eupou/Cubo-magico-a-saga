@@ -5,9 +5,9 @@ import middleCube from "../assets/cuboMeios.jpg";
 import centerCube from "../assets/cuboCentros.jpg";
 import cornerCube from "../assets/cuboCantos.jpg";
 
-import Heading from "../section/Heading";
-import Paragraph from "../section/Paragraph";
-import Section from "../section/Section";
+import Heading from "../Section/Heading";
+import Paragraph from "../Section/Paragraph";
+import Section from "../Section/Section";
 import Figure from "../figure/Figure";
 
 const ContaienerImg = styled.div`

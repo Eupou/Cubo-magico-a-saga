@@ -1,6 +1,6 @@
-import Heading from "../section/Heading";
-import Paragraph from "../section/Paragraph";
-import Section from "../section/Section";
+import Heading from "../Section/Heading";
+import Paragraph from "../Section/Paragraph";
+import Section from "../Section/Section";
 
 import CodeWrapper from "../codeSection/CodeWrapper";
 import CodeLine from "../codeSection/CodeLine";
