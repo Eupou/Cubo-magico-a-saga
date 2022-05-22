@@ -5,7 +5,7 @@
 ## Objetivos
 Nesse projeto estou criando um guia para você conseguir constuir um cubo mágico, nesse primeiro momento ele vai ser apenas um cubo 2d, mais com a minha evolução no decorrer do projeto vou atualizando ele para que se transforme em 3d
 
-Você pode conferir como o projeto se encontra atualmente clicando nesse <a href="https://cubo-magico-a-saga.vercel.app/" target="_blank">link</a>
+Você pode conferir como o projeto se encontra atualmente clicando nesse <a href="https://cubo-magico-a-saga.vercel.app/" target="blank">link</a>
 
 ## Rodando localmente
 
