@@ -2,8 +2,11 @@ import styled from "styled-components";
 
 const StyledSection = styled.section`
   width: 60vw;
-  /* height: 100%; */
   margin-top: 50px;
+
+  @media (max-width: 450px) {
+    width: 95vw;
+  }
 `;
 
 const Section = ({ children }) => {

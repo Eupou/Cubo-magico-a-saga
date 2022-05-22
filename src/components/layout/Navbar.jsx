@@ -12,6 +12,12 @@ const Header = styled.header`
   background-color: #202020;
   box-shadow: 0 5px 5px #0c0c0cb6;
   color: #e7e5e5;
+
+  @media (max-width: 450px) {
+    height: 10vh;
+    position: fixed;
+    top: 0;
+  }
 `;
 
 const HeaderWrapper = styled.div`

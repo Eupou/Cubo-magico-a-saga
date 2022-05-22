@@ -21,7 +21,23 @@ const Content = styled.div`
 `;
 
 const App = () => {
+  let cursorPosX = 0;
+  window.addEventListener("click", (e) => {
+    cursorPosX = e.offsetX;
+    closeSidebar();
+  });
+
   const [sidebarStatus, setSidebarStatus] = useState(false);
+
+  const windowWidth = window.innerWidth;
+  const sidebarWidth = windowWidth * 0.6;
+
+  function closeSidebar() {
+    if (sidebarStatus == false && cursorPosX > sidebarWidth) {
+      setSidebarStatus(true);
+    }
+  }
+
   return (
     <>
       <Navbar setSidebarStatus={() => setSidebarStatus(!sidebarStatus)} />

@@ -11,6 +11,17 @@ const StyledSidebar = styled.div`
   background-color: #202020;
   border-right: 1px solid #4b4a4aba;
   transition: 0.3s ease-in-out;
+
+  @media (max-width: 450px) {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    margin-left: ${(props) =>
+      props.mode === "true" ? "calc(-60vw - 1px)" : "0"};
+    z-index: 1000000000;
+    height: 100vh;
+    width: 60vw;
+  }
 `;
 //#endregion
 

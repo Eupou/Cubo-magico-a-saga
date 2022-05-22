@@ -14,6 +14,10 @@ const ContaienerImg = styled.div`
   margin-top: 15px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 450px) {
+    flex-direction: column;
+  }
 `;
 
 const Home = () => {
