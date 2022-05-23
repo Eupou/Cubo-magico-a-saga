@@ -208,7 +208,7 @@ const Day0 = () => {
         </CodeLine>
       </CodeWrapper>
 
-      <Heading level="h3" fontSize={"25px"}>
+      <Heading level="h3" fontSize={"25px"} marginTop="50px">
         Movendo o cubo
       </Heading>
 

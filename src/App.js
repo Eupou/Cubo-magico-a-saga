@@ -33,7 +33,11 @@ const App = () => {
   const sidebarWidth = windowWidth * 0.6;
 
   function closeSidebar() {
-    if (sidebarStatus == false && cursorPosX > sidebarWidth) {
+    if (
+      sidebarStatus == false &&
+      cursorPosX > sidebarWidth &&
+      windowWidth <= 450
+    ) {
       setSidebarStatus(true);
     }
   }

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+import allMoves from "../assets/movimentosTodasFaces.jpg";
 import upMoves from "../assets/movimentosCima.jpg";
 import downMoves from "../assets/movimentosBaixo.jpg";
 import middleCube from "../assets/cuboMeios.jpg";
@@ -37,7 +38,7 @@ const Home = () => {
         Explicando o cubo mágico
       </Heading>
       <Paragraph>
-        Um cubo mágico convecional tem 6 lados e cada lado contém 9 peças e
+        Um cubo mágico convecional tem 6 faces e cada lado contém 9 peças e
         essas peças podem ser separadas em categorias fáceis de serem
         percebidas, os cantos, os meios e os centros
       </Paragraph>
@@ -64,7 +65,8 @@ const Home = () => {
         Os movimentos do cubo.
       </Heading>
       <Paragraph>
-        O cubo tem 7 movimentos e os mesmos movimentos na direção contraria
+        O cubo tem 7 movimentos, os mesmos movimentos na direção contrária e
+        isso acontence em todas as faces dele.
       </Paragraph>
 
       <ContaienerImg>
@@ -72,7 +74,12 @@ const Home = () => {
         <Figure
           alt=""
           imgUrl={downMoves}
-          captionText="movimentos para dentro pra fora pa"
+          captionText="movimentos para dentro"
+        />
+        <Figure
+          alt=""
+          imgUrl={allMoves}
+          captionText="movimento em todas as faces"
         />
       </ContaienerImg>
     </Section>
