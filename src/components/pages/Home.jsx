@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-import defaultCube from "../assets/cuboBranco.png";
+import upMoves from "../assets/movimentosCima.jpg";
+import downMoves from "../assets/movimentosBaixo.jpg";
 import middleCube from "../assets/cuboMeios.jpg";
 import centerCube from "../assets/cuboCentros.jpg";
 import cornerCube from "../assets/cuboCantos.jpg";
@@ -32,7 +33,7 @@ const Home = () => {
         eu vou fazer um 2d e explicar todo o processo da construção.
       </Paragraph>
 
-      <Heading level="h3" fontSize="24px" marginTop="20px">
+      <Heading level="h3" fontSize="24px" marginTop="50px">
         Explicando o cubo mágico
       </Heading>
       <Paragraph>
@@ -56,6 +57,22 @@ const Home = () => {
           alt="cubo mágico"
           imgUrl={middleCube}
           captionText="Peças do meio"
+        />
+      </ContaienerImg>
+
+      <Heading level="h3" fontSize="24px" marginTop="50px">
+        Os movimentos do cubo.
+      </Heading>
+      <Paragraph>
+        O cubo tem 7 movimentos e os mesmos movimentos na direção contraria
+      </Paragraph>
+
+      <ContaienerImg>
+        <Figure alt="" imgUrl={upMoves} captionText="movimentos pra fora" />
+        <Figure
+          alt=""
+          imgUrl={downMoves}
+          captionText="movimentos para dentro pra fora pa"
         />
       </ContaienerImg>
     </Section>
