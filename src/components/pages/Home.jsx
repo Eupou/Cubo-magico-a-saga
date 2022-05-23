@@ -11,6 +11,7 @@ import Heading from "../Section/Heading";
 import Paragraph from "../Section/Paragraph";
 import Section from "../Section/Section";
 import Figure from "../figure/Figure";
+import NextPageButton from "../buttons/NextPageButton";
 
 const ContaienerImg = styled.div`
   margin-top: 15px;
@@ -20,6 +21,13 @@ const ContaienerImg = styled.div`
   @media (max-width: 450px) {
     flex-direction: column;
   }
+`;
+
+const ContainerButton = styled.div`
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  margin-top: 50px;
 `;
 
 const Home = () => {
@@ -82,6 +90,10 @@ const Home = () => {
           captionText="movimento em todas as faces"
         />
       </ContaienerImg>
+
+      <ContainerButton>
+        <NextPageButton to="day0" text="Dia 0" />
+      </ContainerButton>
     </Section>
   );
 };

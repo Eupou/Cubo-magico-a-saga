@@ -16,6 +16,7 @@ const Day0 = () => {
 
   return (
     <Section>
+      <div id="topo"></div>
       <Heading level="h1" fontSize="30px">
         Dia 0
       </Heading>
