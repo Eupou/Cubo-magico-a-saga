@@ -4,7 +4,7 @@ const StyledSection = styled.section`
   width: 60vw;
   margin-top: 50px;
 
-  @media (max-width: 450px) {
+  @media (max-width: 768px) {
     width: 95vw;
   }
 `;

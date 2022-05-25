@@ -30,6 +30,7 @@ const Sidebar = ({ sidebarStatus }) => {
     <StyledSidebar mode={sidebarStatus ? "true" : "false"}>
       <SidebarLink to="/" text="Home" />
       <SidebarLink to="/day0" text="Dia 0" />
+      <SidebarLink to="/day1" text="Dia 1" />
     </StyledSidebar>
   );
 };

@@ -92,7 +92,7 @@ const Home = () => {
       </ContaienerImg>
 
       <ContainerButton>
-        <NextPageButton to="day0" text="Dia 0" />
+        <NextPageButton to="/day0" text="Dia 0" />
       </ContainerButton>
     </Section>
   );

@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 
 import Home from "./components/pages/Home";
-import Day0 from "./components/pages/Day0";
+import Day0 from "./components/pages/days/Day0";
+import Day1 from "./components/pages/days/Day1";
 
 import Navbar from "./components/layout/Navbar";
 import Sidebar from "./components/layout/sidebar/Sidebar";
@@ -50,8 +51,9 @@ const App = () => {
           <Sidebar sidebarStatus={sidebarStatus} />
           <Content>
             <Routes>
-              <Route exact path="/" element={<Home />}></Route>
-              <Route path="/day0" element={<Day0 />}></Route>
+              <Route exact path="/" element={<Home />} />
+              <Route path="day0" element={<Day0 />} />
+              <Route path="day1" element={<Day1 />} />
             </Routes>
           </Content>
         </Main>

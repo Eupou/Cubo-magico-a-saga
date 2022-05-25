@@ -8,6 +8,12 @@ const StyledFigure = styled.figure`
   background-color: #1e1e1e;
   border-radius: 10px;
 
+  @media (max-width: 768px) {
+    margin: auto;
+    width: 29vw;
+    height: 45vw;
+  }
+
   @media (max-width: 450px) {
     margin: auto;
     width: 300px;
@@ -31,6 +37,10 @@ const Img = styled.img`
   border-top-right-radius: 10px;
   width: ${(props) => props.imgWidth || 250}px;
   height: ${(props) => props.imgHeight}px;
+
+  @media (max-width: 768px) {
+    width: 29vw;
+  }
 
   @media (max-width: 450px) {
     width: 100%;

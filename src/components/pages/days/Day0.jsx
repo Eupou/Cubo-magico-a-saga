@@ -1,11 +1,24 @@
-import Heading from "../Section/Heading";
-import Paragraph from "../Section/Paragraph";
-import Section from "../Section/Section";
+import styled from "styled-components";
 
-import CodeWrapper from "../codeSection/CodeWrapper";
-import CodeLine from "../codeSection/CodeLine";
-import Hlt from "../codeSection/Hlt";
-import Comment from "../codeSection/Comment";
+import Heading from "../../Section/Heading";
+import Paragraph from "../../Section/Paragraph";
+import Section from "../../Section/Section";
+import CodeWrapper from "../../codeSection/CodeWrapper";
+import CodeLine from "../../codeSection/CodeLine";
+import Hlt from "../../codeSection/Hlt";
+import Comment from "../../codeSection/Comment";
+import NextPageButton from "../../buttons/NextPageButton";
+
+const Nav = styled.nav`
+  margin-top: 50px;
+  width: 100%;
+`;
+
+const Ul = styled.ul`
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+`;
 
 const Day0 = () => {
   let lastLineN = 0;
@@ -16,7 +29,6 @@ const Day0 = () => {
 
   return (
     <Section>
-      <div id="topo"></div>
       <Heading level="h1" fontSize="30px">
         Dia 0
       </Heading>
@@ -383,6 +395,17 @@ const Day0 = () => {
         Com essas ideias básicas na cabeça, acho que finalmente estamos prontos
         para prossegir e colocar a mão na massa e começar construir o cubo.
       </Paragraph>
+
+      <Nav>
+        <Ul>
+          <li>
+            <NextPageButton to="/" text="Home" />
+          </li>
+          <li>
+            <NextPageButton to="/day1" text="Dia 1" />
+          </li>
+        </Ul>
+      </Nav>
     </Section>
   );
 };

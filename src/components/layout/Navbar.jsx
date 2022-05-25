@@ -15,7 +15,7 @@ const Header = styled.header`
 
   @media (max-width: 450px) {
     height: 10vh;
-    position: fixed;
+    position: sticky;
     top: 0;
   }
 `;
